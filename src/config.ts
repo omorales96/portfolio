@@ -14,7 +14,7 @@ export const SITE = {
 }
 
 export const ME = {
-    name: "VicBox Dot Dev",
+    name: "Camilo Morales" ,
     profession: "Software Engineer | Full Stack Developer",
     profileImage: "pp2.png",
     profileFacts: [
