@@ -17,18 +17,6 @@ const languages: Language[] = [
         level: "Bilingual",
         description: "I speak fluently and write fluently",
         show: true
-    },
-    {
-        name: "French",
-        level: "B1",
-        description: "I speak fluently and write fluently",
-        show: true
-    },
-    {
-        name: "Italian",
-        level: "B2",
-        description: "I speak fluently and write fluently",
-        show: false
     }
 ];
 
