@@ -14,7 +14,7 @@ export const SITE = {
 }
 
 export const ME = {
-    name: "Camilo Morales" ,
+    name: "Oscar Morales" ,
     profession: "Software Engineer | Full Stack Developer",
     profileImage: "pp2.png",
     profileFacts: [
