@@ -15,7 +15,7 @@ export const SITE = {
 
 export const ME = {
     name: "Oscar Morales" ,
-    profession: "Economist | Data Analyst",
+    profession: "Economist | Business Analyst | Data Engineer | Data Analyst",
     profileImage: "pp2.png",
     profileFacts: [
         {
@@ -36,7 +36,7 @@ export const ME = {
         linkedin: "https://www.linkedin.com/in/victor-alvaradohn",
         resumeDoc: "resume.pdf",
     },
-    aboutMe: "I am a software engineer with a passion for web development. I have experience in building web " + "applications using modern technologies. I am a self-taught developer who enjoys learning new things and " + "sharing knowledge with others.",
+    aboutMe: "Specialist in turning data into insights. " + "Builder of workflows using KNIME to combine data from Snowflake, MS SQL or CSV files to capture essencial data where then it is showing in Power BI, Looker Studio or Excel. My focus on automation enhances efficiency in data processes.",
 }
 
 export const SOCIALS = [
