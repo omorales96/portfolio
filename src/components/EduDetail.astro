@@ -1,6 +1,7 @@
 ---
 // component imports
 import {Badge} from "./ui/badge";
+import {Icon} from "astro-icon/components";
 
 // lib imports
 import {formatDatetime} from "../lib/utils";
@@ -13,6 +14,9 @@ interface Edu {
     endDate?: string;
     description: string;
     currentUni: boolean;
+    icon?: string;
+    logo?: string;
+    color?: string;
 }
 
 const {eduData} = Astro.props;  // Ensure correct typing for the props
@@ -23,19 +27,29 @@ const {
     startDate,
     endDate,
     description,
-    currentUni
+    currentUni,
+    icon,
+    logo,
+    color
 } = eduData as Edu;
 ---
 
-<div class="flex flex-col gap-2">
-    <Badge className="bg-primary-light dark:bg-primary-dark w-fit rounded-md">
-        {formatDatetime(startDate)} - {currentUni ? "Present" : formatDatetime(endDate)}
-    </Badge>
-    <h3 class="text-xl font-bold">{title}</h3>
-    <div class="flex gap-2">
-        <p>{school}</p>
-        <span>/</span>
-        <p>{location}</p>
+<div class="flex gap-4">
+    {logo && (
+        <div class="w-28 md:w-40 shrink-0 mt-1">
+            <img src={logo} alt={`${school} logo`} class="w-full h-auto invert dark:invert-0" />
+        </div>
+    )}
+    {icon && (
+        <div class="w-10 h-10 shrink-0 mt-1">
+            <Icon width={40} height={40} name={icon} style={color ? `color: ${color}` : undefined} class={color ? "" : "text-primary-light dark:text-primary-dark"} />
+        </div>
+    )}
+    <div class="flex flex-col gap-2">
+        <Badge className="bg-primary-light dark:bg-primary-dark w-fit rounded-md">
+            {formatDatetime(startDate)} - {currentUni ? "Present" : formatDatetime(endDate)}
+        </Badge>
+        <h3 class="text-xl font-bold">{title}</h3>
+        {description && <p>{description}</p>}
     </div>
-    <p>{description}</p>
 </div>

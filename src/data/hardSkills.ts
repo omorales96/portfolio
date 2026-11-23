@@ -2,28 +2,63 @@ interface HardSkill {
   name: string;
   description: string;
   icon: string;
+  color?: string;
 }
 
 const hardSkills: HardSkill[] = [
   {
-    name: "AstroJs",
-    description: "My favorite static site generator for building modern websites",
-    icon: "astro_dark"
+    name: "Power BI",
+    description: "Executive dashboards with DAX measures and scheduled Gateway refresh",
+    icon: "simple-icons:powerbi",
+    color: "#F2C811"
   },
   {
-    name: "NextJs",
-    description: "My favorite React framework for building modern web apps",
-    icon: "nextjs_icon_dark"
+    name: "Excel",
+    description: "Power Query and ODBC connections to Snowflake and SQL Server for dashboards",
+    icon: "simple-icons:microsoftexcel",
+    color: "#217346"
   },
   {
-    name: "NodeJs",
-    description: "I've been using NodeJs for backend development since 2018",
-    icon: "nodejs"
+    name: "Snowflake",
+    description: "Querying data for reporting and analytics",
+    icon: "simple-icons:snowflake",
+    color: "#29B5E8"
   },
   {
-    name: "MongoDB",
-    description: "My favorite database for modern apps",
-    icon: "mongodb"
+    name: "Microsoft SQL Server",
+    description: "SQL queries for reporting and data preparation",
+    icon: "simple-icons:microsoftsqlserver",
+    color: "#CC2927"
+  },
+  {
+    name: "KNIME",
+    description: "Pipelines integrating Snowflake, SQL Server and CSV/TXT sources",
+    icon: "simple-icons:knime",
+    color: "#FDD60C"
+  },
+  {
+    name: "Python",
+    description: "Data preparation and automation",
+    icon: "simple-icons:python",
+    color: "#3776AB"
+  },
+  {
+    name: "R",
+    description: "Data analysis with R Studio",
+    icon: "simple-icons:r",
+    color: "#276DC3"
+  },
+  {
+    name: "Power Automate",
+    description: "Flows connecting OneDrive, Excel and Power BI for automated report delivery",
+    icon: "simple-icons:powerautomate",
+    color: "#0066FF"
+  },
+  {
+    name: "Claude Code",
+    description: "AI-assisted development for building data projects and automating workflows",
+    icon: "simple-icons:claudecode",
+    color: "#D97757"
   }
 ];
 

@@ -1,17 +1,3 @@
-/**
- * Interface representing work experience details.
- *
- * @property {string} title - The job title of the position.
- * @property {string} startDate - The start date of the position in the format YYYY-MM-DD.
- * @property {string} [endDate] - The end date of the position in the format YYYY-MM-DD.
- *                                Optional, can be omitted if the position is current.
- * @property {string} company - The name of the company where the position was held.
- * @property {string} location - The geographic location of the company (e.g., city, state, country).
- * @property {string} description - A brief description of the roles and responsibilities
- *                                   associated with the position.
- * @property {string[]} goals - A list of professional goals achieved or targeted during the position.
- * @property {boolean} currentJob - Indicates whether the position is the current job.
- */
 interface WorkExperience {
     title: string;
     startDate: string;
@@ -23,50 +9,34 @@ interface WorkExperience {
     currentJob: boolean;
 }
 
-/**
- * Represents an array of work experiences.
- *
- * Each work experience object contains details about
- * a job position including the title, start and end dates,
- * company name, job location, description of the role,
- * a list of goals or achievements, and a flag indicating
- * if it is the current job.
- *
- * @type {Array<Object>}
- * @property {string} title - The job title.
- * @property {string} startDate - The start date of the job in YYYY-MM-DD format.
- * @property {string} [endDate] - The end date of the job in YYYY-MM-DD format. Optional for current jobs.
- * @property {string} company - The name of the company.
- * @property {string} location - The location of the job.
- * @property {string} description - A brief description of the job responsibilities.
- * @property {Array<string>} goals - A list of goals or achievements within the job.
- * @property {boolean} currentJob - A flag indicating if the job is the current one.
- */
-const workExperience:WorkExperience[] = [
+const workExperience: WorkExperience[] = [
     {
-        title: "Frontend Developer",
-        startDate: "2020-03-10",
-        company: "Google Inc",
-        location: "United States",
-        description: "Developed and maintained web applications using React, NextJs, and Tailwind CSS.",
+        title: "Data Analyst",
+        startDate: "2023-02-01",
+        endDate: "2026-11-01",
+        company: "Solvo Global (Client: AD Healthcare)",
+        location: "Bogota, Colombia",
+        description: "Data Analyst building Power BI dashboards, SQL queries and data pipelines for healthcare operations leaders.",
         goals: [
-            "Developed and maintained web applications using React, NodeJs, and MongoDB.",
-            "Worked with the team to develop and maintain web applications using React, NodeJs, and MongoDB.",
-            "Created and maintained web applications using React, NodeJs, and MongoDB.",
+            "Developed 15+ financial, operational and volume Power BI dashboards with DAX measures for 10-15 directors and chiefs, focusing on financial performance tracking and executive decision support.",
+            "Partnered directly with the AVP of Operations Performance to gather business requirements, define reporting logic and translate operational requests into SQL queries and dashboards.",
+            "Built 15+ KNIME and Python data preparation workflows to query and unify Snowflake, Microsoft SQL Server and CSV/TXT sources, filtering 1M+ row tables into clean analytical datasets.",
+            "Automated the daily hospital operations report end to end by optimizing dashboard visuals, scheduling Power BI Gateway refreshes, and configuring Power Automate email and CSV distribution flows, eliminating manual refresh and PDF export steps.",
+            "Built Excel dashboards using Power Query and ODBC connections to Snowflake and SQL Server, replicating Power BI reports in Excel and converting Excel reports into Power BI to fit different stakeholder needs.",
         ],
-        currentJob: true,
+        currentJob: false,
     },
     {
-        title: "Software Engineer",
-        startDate: "2018-03-10",
-        endDate: "2020-03-10",
-        company: "Company Name",
-        location: "United States",
-        description: "Developed and maintained web applications using React, NodeJs, and MongoDB.",
+        title: "Business Analytics",
+        startDate: "2021-12-01",
+        endDate: "2023-02-01",
+        company: "GomezLee Marketing (Clients: Whirlpool, Xiaomi)",
+        location: "Bogota, Colombia",
+        description: "Reporting and dashboards for Whirlpool and Xiaomi, working from Bogota for several Central American and Caribbean markets.",
         goals: [
-            "Developed and maintained web applications using React, NodeJs, and MongoDB.",
-            "Worked with the team to develop and maintain web applications using React, NodeJs, and MongoDB.",
-            "Created and maintained web applications using React, NodeJs, and MongoDB.",
+            "Developed and automated SQL- and Excel-based reporting processes across multiple Central American and Caribbean markets.",
+            "Built and maintained Power BI and Looker Studio dashboards that translated historical sales and operations data into KPI insights, enabling operations managers to track team performance and task completion.",
+            "Supported regional teams across Nicaragua, Puerto Rico, Panama, Jamaica, Trinidad and Tobago, and El Salvador in interpreting sales and operational metrics to guide business decisions.",
         ],
         currentJob: false,
     },

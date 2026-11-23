@@ -6,35 +6,35 @@ interface Education {
     location: string;
     description: string;
     currentUni: boolean;
+    type: "degree" | "certification";
+    icon?: string;
+    logo?: string;
+    color?: string;
 }
 
-const  education: Education[] = [
+const education: Education[] = [
     {
-        title: "General English",
-        startDate: "2024-09-01",
+        title: "IBM Data Engineering Professional Certificate",
+        startDate: "2026-01-01",
         endDate: "",
-        school: "University Name",
-        location: "United States",
-        description: "Developed and maintained web applications using React, NodeJs, and MongoDB.",
+        school: "IBM",
+        location: "Online",
+        description: "In progress.",
         currentUni: true,
+        type: "certification",
+        icon: "simple-icons:ibm",
+        color: "#0F62FE",
     },
     {
-        title: "Bachelor of Science in Computer Science",
-        startDate: "2014-09-01",
-        endDate: "2018-06-30",
-        school: "University Name",
-        location: "United States",
-        description: "Developed and maintained web applications using React, NodeJs, and MongoDB.",
+        title: "BSc in Economics",
+        startDate: "2016-01-01",
+        endDate: "2020-11-30",
+        school: "Externado University",
+        location: "Bogota, Colombia",
+        description: "",
         currentUni: false,
-    },
-    {
-        title: "Bachelor of Science in Computer Science",
-        startDate: "2012-09-01",
-        endDate: "2013-06-30",
-        school: "University Name",
-        location: "United States",
-        description: "Developed and maintained web applications using React, NodeJs, and MongoDB.",
-        currentUni: false,
+        type: "degree",
+        logo: "/logos/uexternado.svg",
     },
 ];
 
