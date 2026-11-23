@@ -1,5 +1,5 @@
 export const SITE = {
-    website: "https://oscarmorales.dev", // replace this with your deployed domain
+    website: "https://portfolio-lyart-one-w3qs5auk6m.vercel.app",
     title: "Oscar Morales | Data Analyst",
     description: "Portfolio of Oscar Morales, Data Analyst specialized in SQL, KNIME, Python and Power BI.",
     tags: ["data analyst", "Snowflake", "SQL", "Power BI"],
